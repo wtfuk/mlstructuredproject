@@ -23,7 +23,7 @@ except pkg_resources.DistributionNotFound:
     print("mypackage is not installed, installing with -e .")
     setup(name='genericmlboilerplate',
           version='0.1',
-          packages=['genericmlboilerplate'],
+          packages=find_packages(),
           install_requires=get_requirements('requirements.txt'),
           # metadata for upload to PyPI
           author="Sagar Yadav",
